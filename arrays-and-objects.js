@@ -1,4 +1,3 @@
-
 // getThird takes in an array
 // it returns the third item in the array
 // if there is no third item, return null
@@ -105,11 +104,9 @@ function count(array) {
   for (let i = 0; i <= array.length - 1; i++) {
     if (!(object.hasOwnProperty(array[i]))) {
       object[array[i]] = 1;
-    } else if (object.hasOwnProperty(array[i])) {
+    } else {
       object[array[i]]++;
     }
   }
   return object;
 }
-
-count(['red','blue','blue','pink','blue','green','red']);
